@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Pokemon!</title>
+        <link rel="stylesheet" href="./styles.css">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    </head>
+    <body>
+
+        <section id="seleccion-mascota">
+            <h1 class="title" style="font-size: 60px;"> Pokemon no canon🔥💧🌿</h1>
+            <h2 class="subtitulo" style="font-size: 30px;">Elige a tu mascota: </h2>
+                
+            <div id="contenedorTarjetas"class="tarjetas">
+
+
+            </div>
+
+            <!--Volcanion-> agua y fuego
+            Swampert -> agua y tierra
+            Ground -> tierra y fuego -->
+            <button id="botonseleccion">Seleccionar</button>
+        </section>
+
+        <section id="verMapa">
+            <h1 id="titleM" style="font-size: 58px;"> A buscar pelea!</h1>
+            <canvas id="mapa"></canvas>
+
+            <button id="b3" class="mov1" onmouseup= "detenerMovimiento()" onmousedown = "moverPokemonU()" > ↑ </button>
+            <div>
+                <button id="b2" class="mov" onmouseup= "detenerMovimiento()" onmousedown = "moverPokemonI()" > ← </button>
+                <button id="b4" class="mov" onmouseup= "detenerMovimiento()" onmousedown = "moverPokemonA()" > ↓ </button>
+                <button id="b1" class="mov" onmouseup= "detenerMovimiento()" onmousedown = "moverPokemonD()" > → </button>
+            </div>
+
+
+
+        </section>
+
+
+        <section id="seleccionar-ataque">
+            <h1 class="title2" style="font-size: 40px;"> Pokemon no canon🔥💧🌿</h1>
+            <h2 class="subtitulo" style="font-size: 30px;">Crea tu combo!: </h2>
+
+            <div id="contenedorAtaques" class="ataques">
+                <!-- <button id="bFuego">Fuego 🔥</button>
+                <button id="bAgua">Agua 💧</button>
+                <button id="bTierra">Tierra 🌿</button> -->
+                
+            </div>
+
+            <div>
+                <section id="mensajes">
+                    <p>HISTORIAL</p>
+                </section>
+                <section id="result">Buena suerte!</section>
+                
+                
+                
+
+                <section id="reiniciar">
+                    <button id="bReiniciar">Reiniciar</button>
+                </section>
+            </div>
+
+            <div class="marcador">
+                <div class="pc"> 
+                    <p style="font-size: 40px;" class="vidas" id="vidasjugador">-</p> 
+                    <div id= "combateAjustes" class="ajuste"> 
+                        
+                                                                    
+                    </div>
+                    <p class="pet" id="mascotaJugador">Jugador</p>
+                    <div class="historial" id="aEnemigo"></div>                                   
+                </div>  
+                <div class="yo"> 
+                    <p style="font-size: 40px;" class="vidas" id="vidasenemigo">-</p>  
+                    <div id= "ajuste2" class="ajuste">
+                                               
+                    </div>
+                    <p class="pet" id="mascotaEnemiga">Enemigo</p>
+                    <div class="historial" id="aJugador"></div>                  
+                </div>                    
+            </div>
+        </section>
+        <script src="./js/pokemonjs.js"> </script>
+    </body>
+</html>

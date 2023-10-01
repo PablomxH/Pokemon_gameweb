@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Titan+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carter+One&family=Inconsolata&family=Mochiy+Pop+One&family=Titan+One&display=swap');
+
+ body{
+    background-image: url(https://i.pinimg.com/originals/cd/f2/a5/cdf2a5aa0a40469d23873928f128336f.jpg);
+    background-size: cover;
+    /* background-position: center; */
+}
+
+#seleccion-mascota{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+     
+}
+
+.title {
+    font-family: 'Titan One', cursive;
+    text-shadow: 1px 5px 1px black;
+    text-align: center;
+    color: rgb(255, 236, 43);
+    width: 600px;
+
+    margin: 0 auto;
+    background-color: rgb(0,0,0,0.2);
+}
+
+h2{
+    color: black;
+    background-color: rgba(255, 255, 255, 0.3);
+    
+}
+
+
+button{
+    background-color: orange;
+    width: 150px;
+    height: 40px;
+    margin: 8px;
+    border: 4px #D2B4DE inset;
+    border-radius: 0.5cm;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+
+.BAtaqueS{
+    width: 70px;
+}
+.BAtaqueS:hover{
+    background-color: rgb(255, 94, 0);
+    width: 70px;
+    height: 40px;
+    margin: 8px;
+    border: 4px rgb(255, 94, 0) inset;
+    border-radius: 0.5cm;
+    font-family: 'Mochiy Pop One', sans-serif;
+
+}
+
+
+.tarjetas{
+    display:flex;
+    border: 1px solid black;
+    background-color: rgb(37, 109, 133,0.4);
+    height: 130px;
+    width: 500px;
+    height: 100vh;
+    border-radius: 0.5cm;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0px;
+    list-style: none;
+    font-family: 'Inconsolata', monospace;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.8);
+}
+
+.tarjeta-de-pokemon{
+    width: 180px;
+    height: 100px;
+    background: #256D85;
+    padding: 9px;
+    box-sizing: border-box;
+    margin: 8px;
+    border: 1px solid black;
+    text-align: center;
+    border-radius: 0.7cm;
+    display: flex;
+}
+
+.tarjeta-de-pokemon img{
+    width: 80px;
+    margin-top: -5;
+}
+
+.tarjeta-de-pokemon:hover {
+    cursor: pointer;
+    /* para que el punter cambie a una mano */
+}
+
+.title2 {
+    font-family: 'Titan One', cursive;
+    text-shadow: 1px 5px 1px black;
+    text-align: center;
+    color: rgb(255, 236, 43);
+    width: 600px;
+
+    margin: 0 auto;
+    background-color: rgb(0,0,0,0.2);
+}
+
+#seleccionar-ataque{
+    /* display:flex;   no es necesario por que lo toma desde el js */
+    align-items: center;
+    flex-direction: column;
+}
+
+#result{
+    font-family: 'Inconsolata', monospace;
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    background: rgb(223, 246, 255, 0.5);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 0.5cm;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    box-shadow: 1px 5px 1px black;
+}
+
+.marcador{
+    display: flex;
+    gap: 8rem;
+    padding: 2rem;
+}
+
+.yo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(243, 242, 242,0.65);
+    width: 170px;
+    border: 1px solid black;
+    border-radius: 0.5cm
+}
+
+.pc{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(243, 242, 242,0.65);
+    width: 170px;
+    border: 1px solid black;
+    border-radius: 0.5cm
+}
+
+/* .vidas{
+    display: flex;
+    font-family: 'Titan One', cursive;
+    color: red;
+} */
+
+.historial{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    font-family: 'Inconsolata', monospace;
+}
+
+.pet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Mochiy Pop One', sans-serif;
+}
+/* .tarjetas-mokepon p{
+    font-size: 20px;
+    line-height: 10px;
+    margin-top: 5px;
+} */
+
+input:checked+label {
+    background-color: rgb(223, 246, 255);
+    box-shadow: 10px 10px 10px 10px rgb(223, 246, 255, 0.5);
+}
+input {
+    display: none;
+}
+
+.tarjeta-de-pokemon:hover{
+    background-color:rgb(223, 246, 255, 0.4);
+}
+
+button:hover{
+    background-color: rgb(255, 94, 0);
+    width: 150px;
+    height: 40px;
+    margin: 8px;
+    border: 4px rgb(255, 94, 0) inset;
+    border-radius: 0.5cm;
+    font-family: 'Mochiy Pop One', sans-serif;
+
+}
+
+.pc1 {
+    width: 80px;
+    margin-top: -5;
+}
+
+.yo1 {
+    width: 80px;
+    margin-top: -5;
+    
+}
+
+.ajuste{
+    display: flex;
+    justify-content: center;
+    font-family: 'Titan One', cursive;
+    color: black;
+}
+
+
+
+@media (max-width: 515px){
+    .tarjetas{
+        flex-direction: column;
+    }
+    button{
+        display:flex;
+        flex-direction: column;
+        background-color: orange;
+        width: 150px;
+        height: 40px;
+        margin: 8px;
+        border: 4px #D2B4DE inset;
+        border-radius: 0.5cm;
+        font-family: 'Mochiy Pop One', sans-serif;
+    }
+
+}
+
+#titleM {
+    font-family: 'Titan One', cursive;
+    text-shadow: 1px 5px 1px black;
+    text-align: center;
+    color: rgb(255, 236, 43);
+    width: 600px;
+
+    margin: 0 auto;
+    background-color: rgb(0,0,0,0.2);
+}
+#verMapa {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#mapa{
+    border: 2.5px solid black;
+}
+
+.mov {
+    width: 50px;
+}
+
+.mov:hover{
+    background-color: rgb(255, 94, 0);
+    width: 50px;
+    height: 40px;
+    margin: 8px;
+    border: 4px rgb(255, 94, 0) inset;
+    border-radius: 0.5cm;
+    font-family: 'Mochiy Pop One', sans-serif;
+
+}
+
+.mov1 {
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.mov1:hover{
+    background-color: rgb(255, 94, 0);
+    width: 50px;
+    height: 40px;
+    margin: 8px;
+    border: 4px rgb(255, 94, 0) inset;
+    border-radius: 0.5cm;
+    font-family: 'Mochiy Pop One', sans-serif;
+
+}
